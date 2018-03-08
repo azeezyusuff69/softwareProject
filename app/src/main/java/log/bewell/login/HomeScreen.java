@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import log.bewell.login.nutritionrecorder.CalorieActivity;
 
 
 public class HomeScreen extends AppCompatActivity {
@@ -27,11 +28,10 @@ public class HomeScreen extends AppCompatActivity {
         calorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             //   startActivity(new Intent(HomeScreen.this, CalorieActivity.class));
+                startActivity(new Intent(HomeScreen.this,
+                        CalorieActivity.class));
             }
         });
-
-
 
     }
 }

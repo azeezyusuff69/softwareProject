@@ -19,6 +19,8 @@
         <activity android:name=".ForgotPassword" />
         <activity android:name=".SignUp" />
         <activity android:name=".HomeScreen" />
+        <activity android:name=".nutritionrecorder.CalorieActivity"/>
+        <activity android:name=".nutritionrecorder.WebActivity"/>
 
         <!--<activity android:name=".Support"></activity>-->
     </application>

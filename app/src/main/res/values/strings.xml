@@ -9,6 +9,8 @@
     <string name="noload">No save file found.</string>
     <string name="webview">Lookup</string>
     <string name="url">http://www.thecaloriecounter.com/</string>
+    <!--<string name="url">http://www.myfitnesspal.com/food/calorie-chart-nutrition-facts</string>-->
+
 
     <string name="total">Total:</string>
     <string name="calories">calories</string>
