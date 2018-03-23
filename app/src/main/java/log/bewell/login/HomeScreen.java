@@ -28,10 +28,27 @@ public class HomeScreen extends AppCompatActivity {
         calorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeScreen.this,
-                        CalorieActivity.class));
+                startActivity(new Intent(HomeScreen.this, CalorieActivity.class));
             }
         });
+
+        //Event if user click support click
+        support.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, SupportActivity.class));
+            }
+        });
+
+
+        workout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, FHomeActivity.class));
+            }
+        });
+
+
 
     }
 }

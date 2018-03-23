@@ -5,7 +5,8 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backimage"
+    android:background="@drawable/homebackgro"
+
     tools:context="log.bewell.login.MainActivity">
 
 
@@ -15,8 +16,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="202dp"
-        android:text="Workout" />
+        android:layout_marginTop="197dp"
+        android:text="Workout"
+
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/caloriebtn"
@@ -25,6 +29,9 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/workoutbtn"
         android:layout_marginTop="23dp"
+
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         android:text="Calorie Counter" />
 
     <Button
@@ -34,6 +41,9 @@
         android:layout_below="@+id/caloriebtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
+
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         android:text="Relaxation Sound" />
 
     <Button
@@ -42,7 +52,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/soundbtn"
         android:layout_marginTop="23dp"
+
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         android:text="Support Services " />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/workoutbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:text="TextView" />
+
+
 
 
 </RelativeLayout>

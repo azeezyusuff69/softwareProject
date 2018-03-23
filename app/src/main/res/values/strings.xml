@@ -10,8 +10,6 @@
     <string name="webview">Lookup</string>
     <string name="url">http://www.thecaloriecounter.com/</string>
     <!--<string name="url">http://www.myfitnesspal.com/food/calorie-chart-nutrition-facts</string>-->
-
-
     <string name="total">Total:</string>
     <string name="calories">calories</string>
     <string name="number_error">Invalid calorie amount</string>
@@ -24,5 +22,45 @@
     <string name="hint3">Calories</string>
     <string name="target">Set Target</string>
     <string name="toast_set">Target set.</string>
+
+
+    // Fitness
+    <string name="define_your_level">Define your current level</string>
+    <string name="define_your_level_description">Try for 1 minute to make the maximum number of push-ups (chest), rest 30 seconds and do the maximum number of squats (legs) in 2 minutes, rest 45 seconds and do the maximum amount of sit-ups (press) for 3 minutes. Do not embellish your results, if you start with the wrong level, it is possible to significantly reduce the effectiveness of the training. Even if your initial result will be more than modest, do not worry, you can achieve maximum success, if you are honest with ourselves, from the beginning to the end of the training.</string>
+    <string name="thank_you1">Thank you for using the application!</string>
+    <string name="thank_you2">Should you have any questions or propositions please contact me via email:</string>
+    <string name="thank_you3">Additionally I encourage you to check my another applications in Play Store</string>
+    <string name="boogoogoo">BooGooGoo - the communication platform for day care centers and parents</string>
+    <string name="eventscalendar">Simple but powerful events calendar with custom categories</string>
+    <string name="sicknesstracker">Sickness Tracker - track and monitor the health of your family</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="start_new">New plan</string>
+    <string name="start_new_question">Do you really want to start a new training plan? The current progress will be lost!</string>
+    <string name="workout_finished">You successfully finished the workout. You are the hero of the day!</string>
+    <string name="done">Done</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="instructions">BeWell - is a simple but very effective training plan. You will be doing push-ups, immediately turning to squatting, and then immediately to the sit-ups(press). It is important to keep the proper technique while performing all exercises. Before you start the workouts, you need to consult with a doctor and perform an initial test on the basis of which your actual level of training will be defined. Workouts should be conducted three times a week, between workouts has to be at least one day of rest.</string>
+    <string name="start_date">Start date</string>
+    <string name="level">Level</string>
+    <string name="last_workout">Last workout</string>
+    <string name="next_workout">Next workout</string>
+    <string name="start">Start</string>
+    <string name="continue_text">Continue</string>
+    <string name="start_new_text">Start New</string>
+    <string name="my_progress">My Progress</string>
+    <string name="instructions_text">Instructions</string>
+    <string name="credits">Credits</string>
+    <string name="take_break">Take a break, stretch and prepare for the next training session</string>
+    <string name="you_have_no_plan">You have no active plan. Press \'Start\' button to start a new one.</string>
+    <string name="none">None</string>
+    <string name="you_finished_plan">You successfully finished the training plan. To start a new one press \'Start\'.</string>
+    <string name="current_plan_details">Your current plan details</string>
+    <string name="workout_instructions">Make %1$s push-ups (chest), then %2$s squats (legs), then %3$s sit-ups (press) and press \'Done\' when complete</string>
+    <string name="take_break_instructions">Take a break, stretch and prepare for the next session</string>
+    <string name="novice">5 or less push-ups, squats and sit-ups</string>
+    <string name="average">6-10 push-ups, squats and sit-ups</string>
+    <string name="above_average">20 or more push-ups, squats and sit-ups</string>
 
 </resources>

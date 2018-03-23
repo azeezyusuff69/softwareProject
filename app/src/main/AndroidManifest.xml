@@ -9,6 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,10 +20,43 @@
         <activity android:name=".ForgotPassword" />
         <activity android:name=".SignUp" />
         <activity android:name=".HomeScreen" />
-        <activity android:name=".nutritionrecorder.CalorieActivity"/>
-        <activity android:name=".nutritionrecorder.WebActivity"/>
+        <activity android:name=".nutritionrecorder.CalorieActivity" />
+        <activity android:name=".nutritionrecorder.WebActivity" />
+        <activity android:name=".SupportActivity"></activity>
 
-        <!--<activity android:name=".Support"></activity>-->
+        <activity android:name=".FHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ProgressActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".LevelActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".WorkoutActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".CongratulationsActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".InstructionsActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".CreditsActivity">
+        </activity>
+
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
     </application>
 
 </manifest>

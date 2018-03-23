@@ -91,11 +91,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(!task.isSuccessful())
                         {
-                            if(password.length() < 6 )
-                            {
-                                Snackbar snackBar = Snackbar.make(activity_main,"Password length must be over 6",Snackbar.LENGTH_SHORT);
-                                snackBar.show();
-                            }
+////                            if(password.length() < 6 )
+//                            {
+//                                Snackbar snackBar = Snackbar.make(activity_main,"Password length must be over 6",Snackbar.LENGTH_SHORT);
+//                                snackBar.show();
+//                            }
+                            Snackbar snackBar = Snackbar.make(activity_main,"Password length must be over 6",Snackbar.LENGTH_SHORT);
+//                                snackBar.show();
                         }
                         else{
                             startActivity(new Intent(MainActivity.this,DashBoard.class));
