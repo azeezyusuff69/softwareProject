@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="log.bewell.login.RelaxActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/testing" />
+
+            <TextView
+                android:id="@+id/introTextView"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@+id/playButton1"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginTop="32dp"
+                android:text="There are 3 audio tracks that can help you in times of stress. Click the one that best suit your situation "
+                android:textColor="#346ba1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sosTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/introTextView"
+                android:layout_marginTop="31dp"
+                android:text="Meditation "
+                android:textColor="#346ba1"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sosTitle"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/playButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/medTitle"
+
+                android:layout_alignStart="@+id/playButton2"
+                android:src="@mipmap/play"
+                android:text="Play" />
+
+            <ImageView
+                android:id="@+id/pauseButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/pauseButton2"
+                android:layout_below="@+id/seekBar1"
+                android:src="@mipmap/pause"
+
+                android:text="Pause" />
+
+            <ImageView
+                android:id="@+id/stopButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/stopButton2"
+                android:layout_below="@+id/seekBar1"
+                android:src="@mipmap/stop"
+
+                android:text="Stop" />
+
+            <TextView
+                android:id="@+id/medTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stopButton1"
+                android:layout_marginTop="31dp"
+                android:text="Pink Noise Help to Fall Sleep"
+                android:textColor="#346ba1"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/medTitle"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/playButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seekBar2"
+                android:layout_marginStart="17dp"
+                android:src="@mipmap/play"
+                android:text="Play" />
+
+            <ImageView
+                android:id="@+id/pauseButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playButton2"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/pause"
+                android:text="Pause" />
+
+            <ImageView
+                android:id="@+id/stopButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/seekBar2"
+                android:layout_marginEnd="23dp"
+                android:src="@mipmap/stop"
+                android:text="Stop" />
+
+            <TextView
+                android:id="@+id/sleepTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stopButton2"
+                android:layout_marginTop="31dp"
+                android:text="Sleep "
+                android:textColor="#346ba1"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sleepTitle"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/playButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seekBar3"
+                android:layout_marginStart="17dp"
+                android:src="@mipmap/play"
+                android:text="Play" />
+
+            <ImageView
+                android:id="@+id/pauseButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playButton3"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/pause"
+                android:text="Pause" />
+
+            <ImageView
+                android:id="@+id/stopButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/seekBar3"
+                android:layout_marginEnd="23dp"
+                android:src="@mipmap/stop"
+                android:text="Stop" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
