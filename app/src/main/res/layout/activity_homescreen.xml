@@ -41,7 +41,6 @@
         android:layout_below="@+id/caloriebtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
-
         android:textSize="18sp"
         android:textStyle="bold|italic"
         android:text="Relaxation Sound" />
@@ -66,7 +65,15 @@
         android:layout_marginBottom="23dp"
         android:text="TextView" />
 
-
+    <Button
+        android:id="@+id/testingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="13dp"
+        android:text="Button" />
 
 
 </RelativeLayout>

@@ -8,27 +8,41 @@ import android.view.View;
 import android.widget.Button;
 
 import log.bewell.login.nutritionrecorder.CalorieActivity;
+import log.bewell.login.nutritionrecorder.UserInfoCal;
 
 
 public class HomeScreen extends AppCompatActivity {
 
-    Button workout,calorie,sound,support ;
+    Button workout,calorie,sound,support,calorie1 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homescreen);
 
+        calorie1 = (Button)findViewById(R.id.testingbtn);
+        //Event if Guest button click
+        calorie1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, CalorieActivity.class));
+            }
+        });
+
+
+
+
         workout =(Button)findViewById(R.id.workoutbtn);
         calorie = (Button)findViewById(R.id.caloriebtn);
         sound =(Button)findViewById(R.id.soundbtn);
         support = (Button)findViewById(R.id.supportbtn);
 
-        //Event if Guest button click
+
+        //Event if UserInfo button click
         calorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeScreen.this, CalorieActivity.class));
+                startActivity(new Intent(HomeScreen.this, UserInfoCal.class));
             }
         });
 
@@ -45,6 +59,14 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeScreen.this, FHomeActivity.class));
+            }
+        });
+
+
+        sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, RelaxActivity.class));
             }
         });
 

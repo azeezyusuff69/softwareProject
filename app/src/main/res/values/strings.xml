@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">FirebaseAuthentication</string>
+    <string name="app_name">BeWell</string>
+    <string name="action_settings">Settings</string>
 
     //Calories
     <string name="add">Add</string>
@@ -62,5 +63,49 @@
     <string name="novice">5 or less push-ups, squats and sit-ups</string>
     <string name="average">6-10 push-ups, squats and sit-ups</string>
     <string name="above_average">20 or more push-ups, squats and sit-ups</string>
+
+
+    //Food
+    <string-array name="height_feet">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="height_in">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="activity_level">
+        <item>No exercise</item>
+        <item>Light exercise</item>
+        <item>Moderate exercise</item>
+        <item>Heavy exercise</item>
+        <item>Extreme exercise</item>
+    </string-array>
+    <string-array name="goal">
+        <item>Lose weight</item>
+        <item>Maintain weight</item>
+        <item>Gain weight</item>
+    </string-array>
+    <string-array name = "gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_input_food">InputFood</string>
+    <string name="title_activity_statistics">Statistics</string>
 
 </resources>

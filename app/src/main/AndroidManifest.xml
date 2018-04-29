@@ -2,13 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="log.bewell.login">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity">
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,40 +27,53 @@
         <activity android:name=".HomeScreen" />
         <activity android:name=".nutritionrecorder.CalorieActivity" />
         <activity android:name=".nutritionrecorder.WebActivity" />
-        <activity android:name=".SupportActivity"></activity>
+        <activity android:name=".SupportActivity" />
+        <activity
+            android:name=".FHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgressActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".LevelActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".WorkoutActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CongratulationsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".InstructionsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".CreditsActivity"
+            android:screenOrientation="portrait"></activity>
 
-        <activity android:name=".FHomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".ProgressActivity">
-        </activity>
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".LevelActivity">
-        </activity>
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".WorkoutActivity">
-        </activity>
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".CongratulationsActivity">
-        </activity>
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".InstructionsActivity">
-        </activity>
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".CreditsActivity">
-        </activity>
 
-        <!-- Include the AdActivity configChanges and theme. -->
         <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
+            android:name=".nutritionrecorder.InputFood"
+            android:label="@string/title_activity_input_food"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"> </activity>
+
+        <activity
+            android:name=".nutritionrecorder.Statistics"
+            android:label="@string/title_activity_statistics"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name="log.bewell.login.nutritionrecorder.UserInfoCal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"> </activity>
+
+    <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+        android:name="com.google.android.gms.ads.AdActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".RelaxActivity"></activity>
 
     </application>
 

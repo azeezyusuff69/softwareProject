@@ -165,11 +165,5 @@
             android:onClick="onInstructionsClick"
             android:text="@string/instructions_text" />
 
-        <Button
-            android:id="@+id/credits_button"
-            style="@style/homeButton"
-            android:background="@drawable/button_grey"
-            android:onClick="onCreditsClick"
-            android:text="@string/credits" />
     </LinearLayout>
 </RelativeLayout>
