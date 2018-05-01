@@ -25,12 +25,9 @@ public class HomeScreen extends AppCompatActivity {
         calorie1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeScreen.this, CalorieActivity.class));
+                    startActivity(new Intent(HomeScreen.this, CalorieActivity.class));
             }
         });
-
-
-
 
         workout =(Button)findViewById(R.id.workoutbtn);
         calorie = (Button)findViewById(R.id.caloriebtn);

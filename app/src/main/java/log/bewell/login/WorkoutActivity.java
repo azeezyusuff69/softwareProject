@@ -16,8 +16,6 @@ import log.bewell.login.domain.CurrentState;
 import log.bewell.login.domain.HistoryRecord;
 import log.bewell.login.domain.TrainingHelper;
 import log.bewell.login.domain.Workout;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 
 public class WorkoutActivity extends Activity {
@@ -66,8 +64,35 @@ public class WorkoutActivity extends Activity {
         countsList = (LinearLayout)findViewById(R.id.w_count_list);
 
         pushupsImage = (ImageView)findViewById(R.id.w_pushups);
-        squatsImage = (ImageView)findViewById(R.id.w_squats);
+
+
+        //Event when pushupsimage clicked
+        pushupsImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(WorkoutActivity.this, PushUpVideoActivity.class));
+            }
+        });
+        //Event when situpsImage clicked
         situpsImage = (ImageView)findViewById(R.id.w_situps);
+        situpsImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(WorkoutActivity.this, SitUpVideoActivity.class));
+            }
+        });
+        //Event when squatsImage clicked
+        squatsImage = (ImageView)findViewById(R.id.w_squats);
+        squatsImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(WorkoutActivity.this, SquatVideoActivity.class));
+            }
+        });
+
+
+
+
 
         week = currentState.nextWorkoutWeek;
         day = currentState.nextWorkoutDay;
@@ -81,13 +106,13 @@ public class WorkoutActivity extends Activity {
         startCount();
 
         // Ads
-        AdView mAdView = (AdView)findViewById(R.id.adView);
+       // AdView mAdView = (AdView)findViewById(R.id.adView);
         //mAdView.setVisibility(View.GONE);
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("87CFE888ED65416569041ABF6FCDB9B6") // my
-                .build();
-        mAdView.loadAd(adRequest);
+       // AdRequest adRequest = new AdRequest.Builder()
+            //    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+            //    .addTestDevice("87CFE888ED65416569041ABF6FCDB9B6") // my
+            //    .build();
+       // mAdView.loadAd(adRequest);
     }
 
     public void onDoneClick(View v){
@@ -95,6 +120,7 @@ public class WorkoutActivity extends Activity {
         {
             if(currentCount >= (counts.length - 1))
             {
+
                 long milis = TrainingHelper.getCurrentTime();
                 currentState = TrainingHelper.getCurrentState(this);
                 currentState.lastWorkoutDay = day;
