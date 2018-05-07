@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebackgro"
+
+    tools:context="log.bewell.login.Contact_InfoActivity"
+    >
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/youtubePlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        style="@style/homeButton"
+        android:background="@drawable/button_grey"
+        android:text="Play" />
+
+
+    <view
+        android:id="@+id/youtubePlay"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        id="@+id/view"
+        layout_alignParentStart="true"
+        layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/playBtn"
+        android:layout_marginTop="16dp"
+        android:text="@string/support_contact"
+        android:textAllCaps="true"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="21dp"
+        android:text="@string/the_samaritans"
+        android:textAlignment="textStart"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/samaritans_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/aware_id"
+        android:src="@drawable/www" />
+
+    <ImageView
+        android:id="@+id/samaritans_call"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/phone"
+        android:text="Play" />
+
+
+    <ImageView
+        android:id="@+id/aware_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/clickme"
+        android:layout_alignTop="@+id/textView21"
+        android:src="@drawable/www" />
+
+    <ImageView
+        android:id="@+id/aware_call"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView23"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/aware_id"
+        android:layout_marginTop="16dp"
+        android:text="@string/pieta_house"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/pieta_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_alignStart="@+id/aware_id"
+        android:src="@drawable/www" />
+
+    <ImageView
+        android:id="@+id/pieta_call"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/pieta_id"
+        android:layout_alignStart="@+id/aware_call"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView23"
+        android:text="@string/bodywhys"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/bodywhys_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/pieta_id"
+        android:layout_alignTop="@+id/textView23"
+        android:src="@drawable/www" />
+
+    <ImageView
+        android:id="@+id/bodywhys_call"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView23"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="13dp"
+        android:text="Aware"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clickme"
+        android:layout_alignBottom="@+id/clickme"
+        android:layout_alignParentStart="true"
+        android:text="More Information: "
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/clickme"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="46dp"
+        android:layout_toStartOf="@+id/pieta_call"
+        android:text="Click Me"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>

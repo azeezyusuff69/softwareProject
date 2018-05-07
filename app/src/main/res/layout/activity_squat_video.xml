@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_dotted"
+    tools:context="log.bewell.login.PushUpVideoActivity">
+
+    <ImageView
+        android:id="@+id/instructionsBtn"
+        android:layout_width="280sp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/instructions" />
+
+    <Button
+        android:id="@+id/backToActivity"
+        style="@style/homeButton"
+        android:layout_width="351dp"
+        android:layout_height="33dp"
+        android:layout_gravity=""
+        android:background="@drawable/button_green"
+        android:text="Back To Workout"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:text="@string/squat"
+        android:textColor="#ffffff" />
+
+    <VideoView
+        android:id="@+id/video_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="207dp" />
+
+    <Button
+        android:id="@+id/play_button_squat"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/homeButton"
+        android:background="@drawable/button_grey"
+        android:text="Play" />
+
+</LinearLayout>
