@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/start_date_label"
-                android:text="14 Oct 2014" />
+                android:text="21 Feb 2018" />
 
             <TextView
                 android:id="@+id/level_label"
@@ -95,7 +95,7 @@
                 android:layout_alignLeft="@+id/start_date_text"
                 android:layout_below="@+id/level_text"
                 android:layout_toRightOf="@+id/last_workout_label"
-                android:text="Week 1/Day 1 (13,15,17,14,15,13)" />
+                android:text="Week 1/Day 1 (12,17,13,14,12,11)" />
 
             <TextView
                 android:id="@+id/next_workout_label"
@@ -115,7 +115,7 @@
                 android:layout_alignLeft="@+id/last_workout_text"
                 android:layout_below="@+id/last_workout_text"
                 android:layout_toRightOf="@+id/next_workout_label"
-                android:text="Week 1/Day 2 (13,15,17,14,15,13)" />
+                android:text="Week 1/Day 2 (12,17,13,14,12,11)" />
         </RelativeLayout>
     </RelativeLayout>
 

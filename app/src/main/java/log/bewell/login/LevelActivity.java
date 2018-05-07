@@ -24,7 +24,7 @@ public class LevelActivity extends Activity {
 
         List<Level> levels = new ArrayList<Level>(){{
             add(new Level(){{
-                title = "Novice";
+                title = "Beginner";
                 description = getString(R.string.novice);
             }});
             add(new Level(){{

@@ -20,7 +20,7 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
 
     private TextView txtWelcome;
     private EditText input_new_password;
-    private Button btnChangePass,btnLogout;
+    private Button btnChangePass,btnLogout,homePageid;
     private RelativeLayout activity_dashboard;
 
     private FirebaseAuth auth;
@@ -36,6 +36,15 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         btnChangePass = (Button)findViewById(R.id.dashboard_btn_change_pass);
         btnLogout = (Button)findViewById(R.id.dashboard_btn_logout);
         activity_dashboard = (RelativeLayout)findViewById(R.id.activity_dash_board);
+        homePageid = (Button)findViewById(R.id.homePageid);
+
+        //Event if UserInfo button click
+        homePageid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashBoard.this, HomeScreen.class));
+            }
+        });
 
         btnChangePass.setOnClickListener(this);
         btnLogout.setOnClickListener(this);
@@ -46,6 +55,8 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         //Session check
         if(auth.getCurrentUser() != null)
             txtWelcome.setText("Welcome , "+auth.getCurrentUser().getEmail());
+
+
 
 
     }
@@ -80,4 +91,6 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
             }
         });
     }
+
+
 }

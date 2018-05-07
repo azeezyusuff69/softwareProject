@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="bottom"
-        android:layout_above="@+id/adView"
+        android:layout_above="@+id/futureAv"
         android:layout_marginBottom="5sp"
         android:layout_marginLeft="@dimen/activity_vertical_margin"
         android:layout_marginRight="@dimen/activity_vertical_margin"
@@ -117,7 +117,7 @@
     </LinearLayout>
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/futureAv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -126,7 +126,7 @@
         android:layout_marginBottom="11dp"
         android:gravity="bottom"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-7435818698004676/6160093803"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="1"></com.google.android.gms.ads.AdView>
 
 
 </RelativeLayout>

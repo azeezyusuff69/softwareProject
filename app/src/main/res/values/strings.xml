@@ -27,7 +27,7 @@
 
     // Fitness
     <string name="define_your_level">Define your current level</string>
-    <string name="define_your_level_description">Try for 1 minute to make the maximum number of push-ups (chest), rest 30 seconds and do the maximum number of squats (legs) in 2 minutes, rest 45 seconds and do the maximum amount of sit-ups (press) for 3 minutes. Do not embellish your results, if you start with the wrong level, it is possible to significantly reduce the effectiveness of the training. Even if your initial result will be more than modest, do not worry, you can achieve maximum success, if you are honest with ourselves, from the beginning to the end of the training.</string>
+    <string name="define_your_level_description">\nTry for 1 minute to make the maximum number of push-ups (chest), rest 30 seconds and do the maximum number of squats (legs) in 2 minutes, rest 45 seconds and do the maximum amount of sit-ups (press) for 3 minutes.\n\nDo not embellish your results, if you start with the wrong level, it is possible to significantly reduce the effectiveness of the training. Even if your initial result will be more than modest, do not worry, you can achieve maximum success, if you are honest with ourselves, from the beginning to the end of the training.</string>
     <string name="thank_you1">Thank you for using the application!</string>
     <string name="thank_you2">Should you have any questions or propositions please contact me via email:</string>
     <string name="yes">Yes</string>
@@ -38,7 +38,7 @@
     <string name="done">Done</string>
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
-    <string name="instructions">BeWell - is a simple but very effective training plan. You will be doing push-ups, immediately turning to squatting, and then immediately to the sit-ups(press). It is important to keep the proper technique while performing all exercises. Before you start the workouts, you need to consult with a doctor and perform an initial test on the basis of which your actual level of training will be defined. Workouts should be conducted three times a week, between workouts has to be at least one day of rest.</string>
+    <string name="instructions">\nBeWell Fitness - is a simple but very effective training plan. You will be doing push-ups, immediately turning to squatting, and then immediately to the sit-ups(press). It is important to keep the proper technique while performing all exercises. Before you start the workouts.\n\nYou need to consult with a doctor and perform an initial test on the basis of which your actual level of training will be defined.\n\nWorkouts should be conducted three times a week, between workouts has to be at least one day of rest.</string>
     <string name="start_date">Start date</string>
     <string name="level">Level</string>
     <string name="last_workout">Last workout</string>
@@ -106,5 +106,12 @@
     <string name="pushupInfo"><u><b>PUSH-UP</b></u>\n1)Lie face down on the floor with hands slightly wider than shoulder width.\n\n2)Push down on the floor with the hands and raise the body up by extending the arms.\n\n3)Lower the body back down to the floor by bending at the arms and repeat.\n<b><u>Notes:</u></b>\n Maintain a straight body throughout the exercise.</string>
     <string name="situp"><u><b>SIT-UP</b></u>\n1)Lift your upper body from the floor and up toward the thighs, exhaling as your rise.\n\n2)Contract the abs hard and hold the position for a second.\n\n3) Lower the body back down to the starting position.</string>
     <string name="squat"><u><b>SQUAT</b></u>\n1)Set your feet shoulder-width apart, toes slightly turned out. Pull in your lower abs, and keep your eyes forward.\n\n2)Slowly bend at the knees and drop your hips to lower your body. Keep your heels flat on the floor.\n\n3) At the bottom of the exercise pause for a moment and strongly push back up to the starting position, mirroring the descent.</string>
+    <string name="the_samaritans"><b>The Samaritans</b></string>
+    <string name="support_contact"><b>Support Contact </b></string>
+    <string name="pieta_house"><b>Pieta House\n(Suicide and Self-harm)</b></string>
+    <string name="bodywhys"><b>Bodywhys\n(Eating Disorders) </b></string>
+    <string name="support"><b>If you need to talk to someone, here are a number of helplines you can contact for confidential non-judgemental support.</b></string>
+
+
 
 </resources>

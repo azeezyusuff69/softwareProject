@@ -47,7 +47,7 @@
         android:layout_below="@+id/thank_you_text2"
         android:layout_centerHorizontal="false"
         android:layout_margin="5dip"
-        android:text="azeezyusuf4@gmail.com"
+        android:text="abdulazeez-yusuff@hotmail.com@gmail.com"
         android:textColor="#ffffff"
         android:textSize="15dip"
         android:textStyle="bold" />

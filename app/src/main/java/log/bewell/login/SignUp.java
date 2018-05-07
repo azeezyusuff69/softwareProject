@@ -10,11 +10,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 
 public class SignUp extends AppCompatActivity implements View.OnClickListener {
@@ -54,16 +56,32 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+        String upperCaseChars = "(.*[A-Z].*)";
+        String lowerCaseChars = "(.*[a-z].*)";
+        String numbers = "(.*[0-9].*)";
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        String email = input_email.getText().toString().trim();
+        String password = input_pass.getText().toString().trim();
             if(view.getId() == R.id.signup_btn_login){
                 startActivity(new Intent(SignUp.this,MainActivity.class));
                 finish();
             }
-        else if(view.getId() == R.id.signup_btn_forgot_pass){
+            else if(view.getId() == R.id.signup_btn_forgot_pass){
                 startActivity(new Intent(SignUp.this,ForgotPassword.class));
                 finish();
             }
             else if(view.getId() == R.id.signup_btn_register){
-              signUpUser(input_email.getText().toString(),input_pass.getText().toString());
+
+                // onClick of button perform this simplest code.
+                if (!email.matches(emailPattern))
+                {
+                    Toast.makeText(getApplicationContext(),"Invalid email address", Toast.LENGTH_SHORT).show();
+                }
+                if (!password.matches(upperCaseChars) || !password.matches(lowerCaseChars) || !password.matches(numbers)) {
+                    Toast.makeText(SignUp.this, "Password should contain at least one upper case,one lower case alphabet and a number", Toast.LENGTH_LONG).show();
+                }
+
+                signUpUser(email,password);
             }
     }
 
@@ -73,13 +91,12 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(!task.isSuccessful())
-                        if(password.length() > 15 || password.length() < 8 )
                         {
-                            snackbar = Snackbar.make(activity_sign_up,"Password should be less than 15 and more than 8 characters in length.",Snackbar.LENGTH_SHORT);
-                            snackbar.show();
+                            Toast.makeText(SignUp.this, "User with this email already exist. Provide another email", Toast.LENGTH_SHORT).show();
                         }
-
-
+                        else if (task.getException() instanceof FirebaseAuthUserCollisionException){
+                            Toast.makeText(SignUp.this, "User with this email already exist. Provide another email ", Toast.LENGTH_SHORT).show();
+                        }
                         else{
                             snackbar = Snackbar.make(activity_sign_up,"Register success! ",Snackbar.LENGTH_SHORT);
                             snackbar.show();

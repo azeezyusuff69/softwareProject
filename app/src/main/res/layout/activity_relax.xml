@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/water"
     tools:context="log.bewell.login.RelaxActivity">
 
 
@@ -31,7 +32,7 @@
                 android:layout_below="@+id/imageView2"
                 android:layout_marginTop="32dp"
                 android:text="There are 3 audio tracks that can help you in times of stress. Click the one that best suit your situation "
-                android:textColor="#346ba1"
+                android:textColor="@color/cast_expanded_controller_background_color"
                 android:textSize="20dp" />
 
             <TextView
@@ -40,16 +41,18 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/introTextView"
-                android:layout_marginTop="31dp"
+                android:layout_marginTop="34dp"
                 android:text="Meditation "
-                android:textColor="#346ba1"
-                android:textSize="20sp" />
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekBar1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/sosTitle"
+                android:thumb="@drawable/holo"
                 android:layout_centerHorizontal="true" />
 
             <ImageView
@@ -57,7 +60,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/medTitle"
-
                 android:layout_alignStart="@+id/playButton2"
                 android:src="@mipmap/play"
                 android:text="Play" />
@@ -88,15 +90,17 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/stopButton1"
                 android:layout_marginTop="31dp"
-                android:text="Pink Noise Help to Fall Sleep"
-                android:textColor="#346ba1"
-                android:textSize="20sp" />
+                android:text="Pink Noise"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekBar2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/medTitle"
+                android:thumb="@drawable/holo"
                 android:layout_centerHorizontal="true" />
 
             <ImageView
@@ -134,14 +138,16 @@
                 android:layout_below="@id/stopButton2"
                 android:layout_marginTop="31dp"
                 android:text="Sleep "
-                android:textColor="#346ba1"
-                android:textSize="20sp" />
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <SeekBar
                 android:id="@+id/seekBar3"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/sleepTitle"
+                android:thumb="@drawable/holo"
                 android:layout_centerHorizontal="true" />
 
             <ImageView
@@ -151,6 +157,7 @@
                 android:layout_below="@+id/seekBar3"
                 android:layout_marginStart="17dp"
                 android:src="@mipmap/play"
+
                 android:text="Play" />
 
             <ImageView

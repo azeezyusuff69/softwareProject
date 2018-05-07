@@ -38,7 +38,7 @@ public class FHomeActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fhome);
+        setContentView(R.layout.activity_fitnesshome);
 
         descriptionText = (TextView)findViewById(R.id.description_text);
         startDateText = (TextView)findViewById(R.id.start_date_text);
@@ -158,9 +158,6 @@ public class FHomeActivity extends Activity {
                     currentState.nextWorkoutWeek = 1;
                     currentState.nextWorkoutDay = 1;
                     TrainingHelper.saveCurrentState(this, currentState);
-                    //Intent intent = new Intent(this, WorkoutActivity.class);
-                    //intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
-                    //startActivity(intent);
                     onResume();
                 }
             }

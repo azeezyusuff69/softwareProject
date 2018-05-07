@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/homebackgro"
     tools:context="log.bewell.login.DashBoard">
 
 
@@ -59,14 +60,32 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/dashboard_btn_change_pass"
         android:id="@+id/dashboard_btn_logout"
-        android:text="Logout"
-        android:background="#263238"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimaryDark"
+    android:text="Logout" />
+
+    <!--style="@style/Widget.AppCompat.Button.Colored"
+     android:background="#263238"-->
+
+    <Button
+        android:id="@+id/homePageid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Home" />
+        <!--style="@style/Widget.AppCompat.Button.Colored"-->
+        <!--android:background="#263238"-->
+        <!---->
+
 
 
 </RelativeLayout>

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
    Button btnLogin, btnGuest;
     EditText input_email,input_password;
-    TextView btnSignup,btnForgotPass;
+    TextView btnSignup,btnForgotPass,welcomeUser;
 
     RelativeLayout activity_main;
 
@@ -32,35 +32,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_login);
 
         //View
-        btnGuest =(Button)findViewById(R.id.guestbtn);
         btnLogin = (Button)findViewById(R.id.login_btn_login);
         input_email = (EditText)findViewById(R.id.login_email);
         input_password = (EditText)findViewById(R.id.login_password);
         btnSignup = (TextView)findViewById(R.id.login_btn_signup);
         btnForgotPass = (TextView)findViewById(R.id.login_btn_forgot_password);
         activity_main = (RelativeLayout)findViewById(R.id.activity_main);
+        welcomeUser = (TextView) findViewById(R.id.user_welcome);
 
         btnSignup.setOnClickListener(this);
         btnForgotPass.setOnClickListener(this);
         btnLogin.setOnClickListener(this);
-
-
-
-        //Event if Guest button click
-        btnGuest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, HomeScreen.class));
-            }
-        });
-
 
         //Init Firebase Auth
         auth = FirebaseAuth.getInstance();
 
         //Check already session , if ok-> DashBoard
         if(auth.getCurrentUser() != null)
-            startActivity(new Intent(MainActivity.this,DashBoard.class));
+            startActivity(new Intent(MainActivity.this,HomeScreen.class));
 
     }
 
@@ -80,28 +69,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if(view.getId() == R.id.login_btn_login)
         {
-            loginUser(input_email.getText().toString(),input_password.getText().toString());
+
+            String email = input_email.getText().toString().trim();
+            String password = input_password.getText().toString().trim();
+            loginUser(email,password);
+
         }
     }
 
-    private void loginUser(String email, final String password) {
+    private void loginUser(final String email, final String password) {
         auth.signInWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(!task.isSuccessful())
                         {
-////                            if(password.length() < 6 )
-//                            {
-//                                Snackbar snackBar = Snackbar.make(activity_main,"Password length must be over 6",Snackbar.LENGTH_SHORT);
-//                                snackBar.show();
-//                            }
-                            Snackbar snackBar = Snackbar.make(activity_main,"Password length must be over 6",Snackbar.LENGTH_SHORT);
-//                                snackBar.show();
+                            Snackbar snackBar = Snackbar.make(activity_main,"Invalid email address or Password. Register before using the application  ",Snackbar.LENGTH_SHORT);
+                            snackBar.show();
                         }
                         else{
-                            startActivity(new Intent(MainActivity.this,DashBoard.class));
-                        }
+                            startActivity(new Intent(MainActivity.this,HomeScreen.class));
+                            finish();
+                       }
                     }
                 });
     }

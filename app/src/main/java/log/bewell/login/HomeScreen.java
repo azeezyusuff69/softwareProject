@@ -6,33 +6,48 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-import log.bewell.login.nutritionrecorder.CalorieActivity;
+
 import log.bewell.login.nutritionrecorder.UserInfoCal;
+import log.bewell.login.quiz.QuizStartActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 
-public class HomeScreen extends AppCompatActivity {
 
-    Button workout,calorie,sound,support,calorie1 ;
+public class HomeScreen extends AppCompatActivity implements View.OnClickListener {
+
+    private Button workout,calorie,sound,hseBtn,quiz,changepassword,logout;
+
+    TextView welcomeUser;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homescreen);
 
-        calorie1 = (Button)findViewById(R.id.testingbtn);
-        //Event if Guest button click
-        calorie1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                    startActivity(new Intent(HomeScreen.this, CalorieActivity.class));
-            }
-        });
 
         workout =(Button)findViewById(R.id.workoutbtn);
         calorie = (Button)findViewById(R.id.caloriebtn);
         sound =(Button)findViewById(R.id.soundbtn);
-        support = (Button)findViewById(R.id.supportbtn);
+       // support = (Button)findViewById(R.id.supportbtn);
+        hseBtn =(Button)findViewById(R.id.hseBtn);
+        quiz =(Button)findViewById(R.id.testingbtn);
+        welcomeUser = (TextView) findViewById(R.id.user_welcome);
+        changepassword = (Button)findViewById(R.id.change_password);
+        logout = (Button)findViewById(R.id.logoutid);
+
+
+
+        //Init Firebase Auth
+        auth = FirebaseAuth.getInstance();
+
+
+        if(auth.getCurrentUser() != null)
+            welcomeUser.setText("Welcome , "+auth.getCurrentUser().getEmail());
+
 
 
         //Event if UserInfo button click
@@ -42,15 +57,6 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(new Intent(HomeScreen.this, UserInfoCal.class));
             }
         });
-
-        //Event if user click support click
-        support.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeScreen.this, SupportActivity.class));
-            }
-        });
-
 
         workout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +74,47 @@ public class HomeScreen extends AppCompatActivity {
         });
 
 
+        hseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, Contact_InfoActivity.class));
+            }
+        });
+
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, QuizStartActivity.class));
+            }
+        });
+
+        //Event if UserInfo button click
+        changepassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this, ForgotPassword.class));
+            }
+        });
+
+        logout.setOnClickListener(this);
 
     }
+
+
+    public void onClick(View view) {
+          if(view == logout)
+          logoutUser();
+    }
+
+    private void logoutUser() {
+        auth.signOut();
+        if(auth.getCurrentUser() == null)
+        {
+            startActivity(new Intent(HomeScreen.this,MainActivity.class));
+            finish();
+
+        }
+    }
+
+
 }

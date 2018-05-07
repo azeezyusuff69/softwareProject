@@ -18,7 +18,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 1;
                         day = 1;
-                        restTime = 2;
+                        restTime = 60;
                         // easy
                         counts1 = new int[]{2,3,2,2,3};
                         //average
@@ -30,7 +30,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 1;
                         day = 2;
-                        restTime = 2;
+                        restTime = 60;
                         // easy
                         counts1 = new int[]{3,4,2,3,4};
                         //average
@@ -42,7 +42,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 1;
                         day = 3;
-                        restTime = 2;
+                        restTime = 45;
                         // easy
                         counts1 = new int[]{4,5,4,4,5};
                         //average
@@ -55,7 +55,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 2;
                         day = 1;
-                        restTime = 60;
+                        restTime = 45;
                         // easy
                         counts1 = new int[]{4,6,4,4,6};
                         //average
@@ -67,7 +67,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 2;
                         day = 2;
-                        restTime = 60;
+                        restTime = 45;
                         // easy
                         counts1 = new int[]{5,6,4,4,7};
                         //average
@@ -79,7 +79,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 2;
                         day = 3;
-                        restTime = 60;
+                        restTime = 45;
                         // easy
                         counts1 = new int[]{5,7,5,5,8};
                         //average
@@ -92,7 +92,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 3;
                         day = 1;
-                        restTime = 60;
+                        restTime = 40;
                         // easy
                         counts1 = new int[]{10,12,7,7,9};
                         //average
@@ -104,7 +104,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 3;
                         day = 2;
-                        restTime = 60;
+                        restTime = 40;
                         // easy
                         counts1 = new int[]{10,12,8,8,12};
                         //average
@@ -116,7 +116,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 3;
                         day = 3;
-                        restTime = 60;
+                        restTime = 40;
                         // easy
                         counts1 = new int[]{11,13,9,9,13};
                         //average
@@ -129,7 +129,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 4;
                         day = 1;
-                        restTime = 60;
+                        restTime = 50;
                         // easy
                         counts1 = new int[]{12,14,11,10,16};
                         //average
@@ -141,7 +141,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 4;
                         day = 2;
-                        restTime = 60;
+                        restTime = 50;
                         // easy
                         counts1 = new int[]{14,16,12,12,18};
                         //average
@@ -153,7 +153,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 4;
                         day = 3;
-                        restTime = 60;
+                        restTime = 50;
                         // easy
                         counts1 = new int[]{16,18,13,13,20};
                         //average
@@ -166,7 +166,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 5;
                         day = 1;
-                        restTime = 45;
+                        restTime = 50;
                         // easy
                         counts1 = new int[]{17,19,15,15,22};
                         //average
@@ -178,7 +178,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 5;
                         day = 2;
-                        restTime = 45;
+                        restTime = 50;
                         // easy
                         counts1 = new int[]{10,13,10,9,25};
                         //average
@@ -190,7 +190,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 5;
                         day = 3;
-                        restTime = 45;
+                        restTime = 50;
                         // easy
                         counts1 = new int[]{13,15,12,10,30};
                         //average

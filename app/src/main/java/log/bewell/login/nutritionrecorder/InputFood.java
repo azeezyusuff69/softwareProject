@@ -30,6 +30,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 
+import log.bewell.login.HomeScreen;
 import log.bewell.login.R;
 
 public class InputFood extends AppCompatActivity {
@@ -38,22 +39,32 @@ public class InputFood extends AppCompatActivity {
     SimpleAdapter simpleAdapter;
     Date currentDay;
 
+    Button homeuserInput;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_food);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//        Button backToMain = (Button) findViewById(R.id.backToMain) ;
-//        backToMain.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent back = new Intent(InputFood.this, UserInfoCal.class);
-//                startActivity(back);
-//            }
-//        });
 
+        Button onlineCal = (Button) findViewById(R.id.lookup) ;
+        onlineCal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent back = new Intent(InputFood.this, WebActivity.class);
+                startActivity(back);
+            }
+        });
 
+        homeuserInput = (Button)findViewById(R.id.homeuser);
+        //Event if UserInfo button click
+        homeuserInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(InputFood.this, HomeScreen.class));
+            }
+        });
 
         feedList = new ArrayList<HashMap<String, String>>();
         simpleAdapter = new SimpleAdapter(this, feedList, R.layout.view_item, new String[]{"foodName", "calories"}, new int[]{R.id.foodName, R.id.calories});

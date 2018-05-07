@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="log.bewell.login.nutritionrecorder.InputFood"
-    android:background="#5A9BD5"
+    android:background="@drawable/orangefruit"
     tools:showIn="@layout/activity_input_food"
     android:focusableInTouchMode="true">
 
@@ -22,6 +22,7 @@
         android:id="@+id/textView9"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:textColor="#3c6478"
         android:layout_marginTop="0dp" />
 
     <EditText
@@ -72,7 +73,8 @@
         <ListView
             android:id="@+id/listView1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:textColor="#107896">
         </ListView>
 
     </LinearLayout>
@@ -99,15 +101,16 @@
         android:layout_alignStart="@+id/editText2" />
 
     <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="calories"
-        android:id="@+id/textView13"
         android:layout_alignBottom="@+id/editText4"
-        android:layout_toRightOf="@+id/editText4"
+        android:layout_marginBottom="5dp"
         android:layout_toEndOf="@+id/editText4"
-        android:layout_marginBottom="5dp" />
+        android:layout_toRightOf="@+id/editText4"
+        android:text="calories"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/cast_expanded_controller_background_color" />
 
     <Button
         android:layout_width="40dp"
@@ -122,14 +125,35 @@
         android:layout_alignEnd="@+id/button2" />
 
     <TextView
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Your goal calories per day is: 0000"
-        android:id="@+id/textView16"
-        android:layout_marginTop="10dp"
         android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Your goal calories per day is: 0000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:textColor="@color/cast_expanded_controller_background_color" />
+
+    <Button
+        android:id="@+id/homeuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button5"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignStart="@+id/editText4"
+        android:background="#77ADDC"
+        android:text="Home Page" />
+
+    <Button
+        android:id="@+id/lookup"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button3"
+        android:background="#77ADDC"
+        android:text="@string/webview" />
 
 
 </RelativeLayout>

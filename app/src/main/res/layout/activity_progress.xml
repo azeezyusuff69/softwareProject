@@ -17,16 +17,6 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/progress" />
 
-    <!--<Spinner
-        android:id="@+id/p_level_selector"
-        android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:layout_below="@+id/p_header_label"
-        android:spinnerMode="dropdown"
-        android:background="@drawable/background_grey"
-        android:entries="@array/levels_array"
-        >
-    </Spinner>-->
 
     <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView
         android:id="@+id/workouts_list"

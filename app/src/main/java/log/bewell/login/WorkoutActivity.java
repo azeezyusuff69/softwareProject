@@ -104,15 +104,6 @@ public class WorkoutActivity extends Activity {
         descriptionText.setText(String.format("Week %d/Day %d/%s",week,day,TrainingHelper.getLevelDescription(level)));
 
         startCount();
-
-        // Ads
-       // AdView mAdView = (AdView)findViewById(R.id.adView);
-        //mAdView.setVisibility(View.GONE);
-       // AdRequest adRequest = new AdRequest.Builder()
-            //    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-            //    .addTestDevice("87CFE888ED65416569041ABF6FCDB9B6") // my
-            //    .build();
-       // mAdView.loadAd(adRequest);
     }
 
     public void onDoneClick(View v){

@@ -18,7 +18,7 @@ public class SupportActivity extends AppCompatActivity {
 
         WebView webView = (WebView) findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://www.yourmentalhealth.ie/supports-services/find-services/");
+        webView.loadUrl("http://www.yourmentalhealth.ie/supports-services/");
 
     }
 }

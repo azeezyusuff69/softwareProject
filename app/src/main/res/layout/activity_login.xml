@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/homebackgro"
     tools:context="log.bewell.login.MainActivity">
 
    <ImageView
@@ -115,13 +116,13 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/guestbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="21dp"
-        android:text="Continue as  guest" />
+    <!--<Button-->
+        <!--android:id="@+id/guestbtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="21dp"-->
+        <!--android:text="Continue as  guest" />-->
 
 </RelativeLayout>

@@ -61,7 +61,6 @@ public class RelaxActivity extends Activity implements Runnable{
         soundThread = new Thread(this);
         soundThread.start();
 
-
     }
 
     private void setupListeners1(){
@@ -124,7 +123,7 @@ public class RelaxActivity extends Activity implements Runnable{
 
         stopButton2.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View cuttentView){
+            public void onClick(View currentView){
                 soundPlayer2.stop();
                 soundPlayer2 = MediaPlayer.create(getBaseContext(), R.raw.pink_noise);
             }
@@ -194,6 +193,7 @@ public class RelaxActivity extends Activity implements Runnable{
     }
 
 
+//Allows the seekbar to update
     public void run()
     {
         int currentPosition = 0;
