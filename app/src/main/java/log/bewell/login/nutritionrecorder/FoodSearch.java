@@ -28,6 +28,7 @@ public class FoodSearch extends AsyncTask<Void, Void, String> {
 
     @Override
     protected String doInBackground(Void... params) {
+        //Getting the input of the user input intake and search USDA API online to get the calories number
         try {
             food = food.replaceAll(" ", "%20");
             URL url = new URL("http://api.nal.usda.gov/ndb/search/?format=JSON&q=" + food +

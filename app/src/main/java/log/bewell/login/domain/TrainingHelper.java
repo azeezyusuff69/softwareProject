@@ -1,5 +1,12 @@
 package log.bewell.login.domain;
 
+/**
+ *5/5/2018
+ * @reference  https://www.youtube.com/watch?v=VrUrBNM_RL0&t=
+ * @author Azeez Yusuff x14443758
+ */
+
+
 import android.app.Activity;
 import android.content.SharedPreferences;
 
@@ -11,14 +18,15 @@ import java.util.Calendar;
 
 
 public class TrainingHelper {
-    public static Workout[] workouts = new Workout[]
+    //The Rep and Set the user will do depending on there level
+    private static Workout[] workouts = new Workout[]
             {
                     // week 1
                     // day 1
                     new Workout() {{
                         week = 1;
                         day = 1;
-                        restTime = 60;
+                        restTime = 60; //Time rest
                         // easy
                         counts1 = new int[]{2,3,2,2,3};
                         //average
@@ -42,7 +50,7 @@ public class TrainingHelper {
                     new Workout() {{
                         week = 1;
                         day = 3;
-                        restTime = 45;
+                        restTime = 60;
                         // easy
                         counts1 = new int[]{4,5,4,4,5};
                         //average
@@ -246,7 +254,7 @@ public class TrainingHelper {
         return null;
     }
 
-    public static int getWorkoutKey(Workout w){
+    private static int getWorkoutKey(Workout w){
         return getWorkoutKey(w.week,w.day);
     }
 
@@ -264,14 +272,8 @@ public class TrainingHelper {
         }
         return null;
     }
-    /*public static int getNextWorkoutKey(int key){
-        Workout w = getNextWorkout(key);
-        if(w == null)
-            return 0;
 
-        return getWorkoutKey(w);
-    }*/
-
+    // Level the user can select from
     public static String getLevelDescription(int level){
         switch (level){
             case 1:
@@ -298,6 +300,7 @@ public class TrainingHelper {
         return null;
     }
 
+    //Save the state when the user done doing the set. we are using share preferences to save the state in
     public static CurrentState getCurrentState(Activity context){
         SharedPreferences mPrefs = context.getSharedPreferences("200", Activity.MODE_PRIVATE);
         Gson gson = new Gson();
@@ -319,11 +322,12 @@ public class TrainingHelper {
         prefsEditor.commit();
     }
 
+    //getting the time
     public static long getCurrentTime(){
         Calendar c = Calendar.getInstance();
         return c.getTimeInMillis();
     }
-
+   //getting the workout
     public static String getWorkoutDescription(int week, int day, int level) {
         Workout w = getWorkout(getWorkoutKey(week, day));
         return String.format("Week %d/Day %d (%s)", w.week, w.day, join(TrainingHelper.getCounts(w, level), ","));

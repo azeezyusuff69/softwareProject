@@ -81,6 +81,7 @@ public class BarGraph extends View {
 
     public void onDraw(Canvas ca) {
 
+        //graph
         if (fullImage == null || shouldUpdate) {
             fullImage = Bitmap.createBitmap(getWidth(), getHeight(), Config.ARGB_8888);
             Canvas canvas = new Canvas(fullImage);

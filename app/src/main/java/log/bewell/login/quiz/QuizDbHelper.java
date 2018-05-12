@@ -57,25 +57,35 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     //Saving the question in SQLiteDB
 
     private void fillQuestionsTable() {
-        Question q1 = new Question( "How many people will experience some kind of mental health problem in the course of a year?", "1 in 4", "1 in 10", "1 in 6", 1);
+        Question q1 = new Question( "How many people will experience some kind of mental health problem in the course of a year?", "1 in 4", "1 in 10", "1 in 6",
+                1);
         addQuestion(q1);
-        Question q2 = new Question("What percentage of children have a mental health problem at any given time?", "5%", "20%", "10%", 3);
+        Question q2 = new Question("What percentage of children have a mental health problem at any given time?", "5%", "20%", "10%",
+                3);
         addQuestion(q2);
-        Question q3 = new Question("How many people does depression affect?", "1 in 5", "1 in 10", "1 in 12", 1);
+        Question q3 = new Question("How many people does depression affect?", "1 in 5", "1 in 10", "1 in 12",
+                1);
         addQuestion(q3);
-        Question q4 = new Question("Who is most likely to die from committing suicide?", "Same Ratio", "Women", "Men ", 3);
+        Question q4 = new Question("Who is most likely to die from committing suicide?", "Same Ratio", "Women", "Men ",
+                3);
         addQuestion(q4);
-        Question q5 = new Question("How many prisoners have a mental disorder?", "1 in 2", "1 in 5", "9 in 10", 2);
+        Question q5 = new Question("How many prisoners have a mental disorder?", "1 in 2", "1 in 5", "9 in 10",
+                2);
         addQuestion(q5);
-        Question q6 = new Question( "What is the female to male ratio of Obsessive Compulsive Disorder", "1 in 5", "1 in 10", "1 in 12", 1);
+        Question q6 = new Question( "What is the female to male ratio of Obsessive Compulsive Disorder", "1 in 5", "1 in 10", "1 in 12",
+                1);
         addQuestion(q6);
-        Question q7 = new Question("What are not physical symptoms of depression?",  "Sleeping for longer", "Lessened sex drive", "Loss of appetite",1);
+        Question q7 = new Question("What are not physical symptoms of depression?",  "Sleeping for longer", "Lessened sex drive", "Loss of appetite",
+                1);
         addQuestion(q7);
-        Question q8 = new Question("On how many days a week should you aim to be active for at least 30 minutes?", "5 days", "2 days", "Everyday", 2);
+        Question q8 = new Question("On how many days a week should you aim to be active for at least 30 minutes?", "5 days", "2 days", "Everyday",
+                2);
         addQuestion(q8);
-        Question q9 = new Question("After exercise you are better able to cope with the stresses and strains of life?", "Maybe", "False", "True", 3);
+        Question q9 = new Question("After exercise you are better able to cope with the stresses and strains of life?", "Maybe", "False", "True",
+                3);
         addQuestion(q9);
-        Question q10 = new Question("Exercise can be as effective as medication in treating depression? ", "True", "Maye", "False", 1);
+        Question q10 = new Question("Exercise can be as effective as medication in treating depression? ", "True", "Maye", "False",
+                1);
         addQuestion(q10);
     }
 

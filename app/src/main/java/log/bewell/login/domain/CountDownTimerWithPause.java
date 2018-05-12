@@ -1,18 +1,19 @@
 package log.bewell.login.domain;
 
+/**
+ *5/5/2018
+ * @reference  https://www.youtube.com/watch?v=VrUrBNM_RL0&t=
+ * @author Azeez Yusuff x14443758
+ */
+
+
+import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
 
 /**
  * Schedule a countdown until a time in the future, with
- * regular notifications on intervals along the way.
- *
- * The calls to {@link #onTick(long)} are synchronized to this object so that
- * one call to {@link #onTick(long)} won't ever occur before the previous
- * callback is complete.  This is only relevant when the implementation of
- * {@link #onTick(long)} takes an amount of time to execute that is significant
- * compared to the countdown interval.
  */
 public abstract class CountDownTimerWithPause {
 
@@ -170,6 +171,7 @@ public abstract class CountDownTimerWithPause {
 
 
     // handles counting down
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
 
         @Override

@@ -125,6 +125,7 @@ public class QuizActivity extends AppCompatActivity {
 
         showSolution();
     }
+    //letting user know the answer
     private void showSolution(){
         rb1.setTextColor(Color.RED);
         rb2.setTextColor(Color.RED);

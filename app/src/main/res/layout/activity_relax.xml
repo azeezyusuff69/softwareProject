@@ -19,9 +19,10 @@
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
                 android:src="@drawable/testing" />
 
             <TextView
@@ -31,9 +32,10 @@
                 android:layout_alignStart="@+id/playButton1"
                 android:layout_below="@+id/imageView2"
                 android:layout_marginTop="32dp"
-                android:text="There are 3 audio tracks that can help you in times of stress. Click the one that best suit your situation "
+                android:text="There are 3 audio tracks that can help you in times of stress.\nClick the one that best suit your situation: "
                 android:textColor="@color/cast_expanded_controller_background_color"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/sosTitle"
@@ -41,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/introTextView"
-                android:layout_marginTop="34dp"
+                android:layout_marginTop="31dp"
                 android:text="Meditation "
                 android:textColor="@color/cast_expanded_controller_background_color"
                 android:textSize="20sp"
@@ -60,6 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/medTitle"
+
                 android:layout_alignStart="@+id/playButton2"
                 android:src="@mipmap/play"
                 android:text="Play" />
@@ -90,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/stopButton1"
                 android:layout_marginTop="31dp"
-                android:text="Pink Noise"
+                android:text="Pink Noise Help to Fall Sleep"
                 android:textColor="@color/cast_expanded_controller_background_color"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -137,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/stopButton2"
                 android:layout_marginTop="31dp"
-                android:text="Sleep "
+                android:text="Breathing Meditation"
                 android:textColor="@color/cast_expanded_controller_background_color"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -157,7 +160,6 @@
                 android:layout_below="@+id/seekBar3"
                 android:layout_marginStart="17dp"
                 android:src="@mipmap/play"
-
                 android:text="Play" />
 
             <ImageView

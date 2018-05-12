@@ -133,6 +133,7 @@ public class PushUpVideoActivity extends AppCompatActivity {
              }
          });
 
+         //The video instruction that the user can watch to get the technique of push up right
         mediaC = new MediaController(this);
         VideoView = (VideoView) findViewById(R.id.video_view);
         uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.push_ups);

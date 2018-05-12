@@ -106,6 +106,7 @@ public class WorkoutActivity extends Activity {
         startCount();
     }
 
+    //when the countdown start depending on what the user click pause or resume
     public void onDoneClick(View v){
         if(countdownState == 1)
         {
@@ -185,10 +186,10 @@ public class WorkoutActivity extends Activity {
         }
     }
 
+    //when user are getting ready for there next set of exercise
     private void startTimer(final int sec) {
         countdownState = 2;
         countText.setVisibility(View.GONE);
-        //doneButton.setVisibility(View.GONE);
         doneButton.setText(getString(log.bewell.login.R.string.pause));
         progressBar.setVisibility(View.VISIBLE);
         timerText.setVisibility(View.VISIBLE);

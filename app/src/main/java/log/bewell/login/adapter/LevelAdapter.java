@@ -1,5 +1,13 @@
 package log.bewell.login.adapter;
 
+
+/**
+ *5/5/2018
+ * @reference  https://www.youtube.com/watch?v=VrUrBNM_RL0&t=
+ * @author Azeez Yusuff x14443758
+ */
+
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +20,7 @@ import log.bewell.login.R;
 import log.bewell.login.domain.Level;
 
 import java.util.List;
+
 
 public class LevelAdapter extends ArrayAdapter<Level> {
 

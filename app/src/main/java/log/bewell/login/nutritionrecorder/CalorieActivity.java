@@ -21,7 +21,6 @@ import log.bewell.login.R;
 
 /**
  * A calorie counter list user interface
- * Note: the readme.txt file is in the res/values folder
  */
 public class CalorieActivity extends AppCompatActivity {
     private ArrayList<String> list1 = new ArrayList<String>();
@@ -115,7 +114,6 @@ public class CalorieActivity extends AppCompatActivity {
 
     /**
      * Adds an item to the calorie count list
-     * @param view Not used
      */
     public void addItem(View view) {
         EditText editText2 = (EditText) findViewById(R.id.editText2);
@@ -143,7 +141,6 @@ public class CalorieActivity extends AppCompatActivity {
 
     /**
      * Saves the calorie count list to 2 files, clears the screen, and displays a toast
-     * @param view Not used
      */
     public void saveList(View view) throws FileNotFoundException {
         //save to file
@@ -169,7 +166,6 @@ public class CalorieActivity extends AppCompatActivity {
 
     /**
      * Go to the Web Activity that displays the calorie amount lookup website
-     * @param view Not used
      */
     public void goToWebView(View view) {
         Intent intent = new Intent(this, WebActivity.class);
@@ -178,7 +174,6 @@ public class CalorieActivity extends AppCompatActivity {
 
     /**
      * Clears the list and the save files
-     * @param view Not used
      */
     public void clear(View view) throws FileNotFoundException {
         //clears the save files
@@ -209,7 +204,6 @@ public class CalorieActivity extends AppCompatActivity {
 
     /**
      * Sets the daily target amount of calories
-     * @param view Not used
      */
     public void setTarget(View view) {
         EditText editText3 = (EditText) findViewById(R.id.editText3);

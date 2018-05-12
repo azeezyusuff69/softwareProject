@@ -71,7 +71,8 @@
             android:screenOrientation="portrait"/>
 
 
-        <activity android:name=".RelaxActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".RelaxActivity"  android:screenOrientation="portrait"
+            android:label="Relaxation"/>
         <activity android:name=".PushUpVideoActivity"  android:screenOrientation="portrait"/>
         <activity android:name=".SitUpVideoActivity"  android:screenOrientation="portrait" />
         <activity android:name=".SquatVideoActivity"  android:screenOrientation="portrait" />

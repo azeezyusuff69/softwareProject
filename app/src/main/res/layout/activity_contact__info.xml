@@ -39,8 +39,8 @@
         android:layout_marginTop="16dp"
         android:text="@string/support_contact"
         android:textAllCaps="true"
-        android:textColor="@color/cast_expanded_controller_background_color"
-        android:textSize="17sp"
+        android:textColor="#32CD32"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
@@ -176,7 +176,7 @@
         android:layout_marginEnd="46dp"
         android:layout_toStartOf="@+id/pieta_call"
         android:text="Click Me"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="#DC143C" />
 
 
 </RelativeLayout>

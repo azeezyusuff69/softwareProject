@@ -52,7 +52,7 @@ public class RelaxActivity extends Activity implements Runnable{
         pauseButton3 = (ImageView) findViewById(R.id.pauseButton3);
         stopButton3 = (ImageView) findViewById(R.id.stopButton3);
         soundSeekBar3 = (SeekBar) findViewById(R.id.seekBar3);
-        soundPlayer3 = MediaPlayer.create(this.getBaseContext(), R.raw.sound_help_stress_worry_anxiety);
+        soundPlayer3 = MediaPlayer.create(this.getBaseContext(), R.raw.breathing_meditation);
 
         setupListeners1();
         setupListeners2();
@@ -82,7 +82,7 @@ public class RelaxActivity extends Activity implements Runnable{
             @Override
             public void onClick(View currentView){
                 soundPlayer.stop();
-                soundPlayer = MediaPlayer.create(getBaseContext(), R.raw.sound_help_stress_worry_anxiety);
+                soundPlayer = MediaPlayer.create(getBaseContext(), R.raw.guided_meditation);
             }
         });
 
@@ -168,7 +168,7 @@ public class RelaxActivity extends Activity implements Runnable{
             @Override
             public void onClick(View cuttentView){
                 soundPlayer3.stop();
-                soundPlayer3 = MediaPlayer.create(getBaseContext(), R.raw.guided_meditation);
+                soundPlayer3 = MediaPlayer.create(getBaseContext(), R.raw.breathing_meditation);
             }
         });
 

@@ -1,6 +1,14 @@
 package log.bewell.login;
-//https://www.youtube.com/watch?v=W4hTJybfU7s
-//https://www.youtube.com/watch?v=t5s1_C7nI_o
+//
+//
+
+/**
+ *5/5/2018
+ * @reference https://www.youtube.com/watch?v=t5s1_C7nI_o
+ * @reference https://www.youtube.com/watch?v=W4hTJybfU7s
+ * @author Azeez Yusuff x14443758
+ */
+
 
 import android.content.Intent;
 import android.net.Uri;
@@ -89,7 +97,7 @@ public class Contact_InfoActivity extends YouTubeBaseActivity {
                         }
         });
 
-        //web browner intent to  samaritans website
+        //web browser intent to  samaritans website
         samaritans_id = (ImageView)findViewById(R.id.samaritans_id);
         samaritans_id.setOnClickListener(new View.OnClickListener() {
             @Override

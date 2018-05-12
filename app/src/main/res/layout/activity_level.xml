@@ -21,11 +21,11 @@
         android:id="@+id/define_level_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/define_level_image"
+        android:text="@string/define_your_level_description"
         android:textColor="#ffffff"
-        android:textSize="16dp"
-        android:text="@string/define_your_level_description" />
+        android:textSize="16dp" />
 
     <ListView
         android:id="@+id/level_list"

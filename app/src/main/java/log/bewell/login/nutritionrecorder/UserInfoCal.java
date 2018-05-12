@@ -147,6 +147,7 @@ public class UserInfoCal extends AppCompatActivity {
         // Exit activity
         exit();
     }
+    //CALCULATING TDEE
     public int calculateTDEE(int heightFt, int heightIn, int weight, int activityLevel, int age, int gender, int goal) {
         int height = heightFt * 12 + heightIn;
         double kg = weight * .453592;

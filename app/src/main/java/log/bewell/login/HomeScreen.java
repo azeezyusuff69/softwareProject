@@ -92,7 +92,7 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         changepassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeScreen.this, ForgotPassword.class));
+                startActivity(new Intent(HomeScreen.this, DashBoard.class));
             }
         });
 

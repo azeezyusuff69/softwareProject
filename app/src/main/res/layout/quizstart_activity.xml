@@ -8,15 +8,16 @@
     tools:context="log.bewell.login.quiz.QuizStartActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:text=" Mental Health Quiz "
-        android:textColor="@android:color/black"
-        android:textSize="35sp"
-        android:id="@+id/textView" />
+        android:textColor="#32CD32"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_view_highscore"

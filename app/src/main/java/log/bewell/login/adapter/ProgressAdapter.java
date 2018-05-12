@@ -1,5 +1,12 @@
 package log.bewell.login.adapter;
 
+/**
+ *5/5/2018
+ * @reference  https://www.youtube.com/watch?v=VrUrBNM_RL0&t=
+ * @author Azeez Yusuff x14443758
+ */
+
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -69,6 +76,7 @@ public class ProgressAdapter extends BaseAdapter implements StickyListHeadersAda
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
 
+        //Getting information of Day, Reps, finished data to set the History Record
         if (convertView == null) {
             holder = new ViewHolder();
             convertView = inflater.inflate(R.layout.progress_list_item, parent, false);
@@ -80,6 +88,7 @@ public class ProgressAdapter extends BaseAdapter implements StickyListHeadersAda
             holder = (ViewHolder) convertView.getTag();
         }
 
+        //Setting the user plan detail in the workout page (Day, Reps, finished data)
         HistoryRecord w = workouts.get(position);
         holder.day.setText(String.format("Day %d", w.day));
         holder.repetitions.setText(String.format("%s", TrainingHelper.join(w.counts, "/")));

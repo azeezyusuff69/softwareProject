@@ -22,6 +22,7 @@ public class LevelActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level);
 
+        //User pick the level of the level if beginner or Average or above Average
         List<Level> levels = new ArrayList<Level>(){{
             add(new Level(){{
                 title = "Beginner";
